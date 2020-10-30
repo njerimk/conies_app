@@ -1,0 +1,694 @@
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIceCreams (20201030160523)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ice_creams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "price" float, "size" integer, "ingredients" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201030160523"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-10-30 16:07:05.664509"], ["updated_at", "2020-10-30 16:07:05.664509"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.5ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Papaya"], ["price", 7.378582956949573], ["size", 7], ["ingredients", "Beef"], ["created_at", "2020-10-30 16:38:12.671838"], ["updated_at", "2020-10-30 16:38:12.671838"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Apricots"], ["price", 4.59859355583956], ["size", 6], ["ingredients", "Kohlrabi"], ["created_at", "2020-10-30 16:38:12.677327"], ["updated_at", "2020-10-30 16:38:12.677327"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Passionfruit"], ["price", 6.1888503668363], ["size", 13], ["ingredients", "Chickpea"], ["created_at", "2020-10-30 16:38:12.680823"], ["updated_at", "2020-10-30 16:38:12.680823"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Feijoa"], ["price", 9.374337963029596], ["size", 5], ["ingredients", "Omega Spread"], ["created_at", "2020-10-30 16:38:12.684449"], ["updated_at", "2020-10-30 16:38:12.684449"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Passionfruit"], ["price", 9.72815517953327], ["size", 15], ["ingredients", "Pinto Beans"], ["created_at", "2020-10-30 16:38:12.688310"], ["updated_at", "2020-10-30 16:38:12.688310"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cavalo"], ["price", 7.480983713251343], ["size", 7], ["ingredients", "Enoki Mushrooms"], ["created_at", "2020-10-30 16:38:12.691921"], ["updated_at", "2020-10-30 16:38:12.691921"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Blackberries"], ["price", 9.832395927921988], ["size", 15], ["ingredients", "Lychees"], ["created_at", "2020-10-30 16:38:12.695589"], ["updated_at", "2020-10-30 16:38:12.695589"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Melon"], ["price", 6.626083638230466], ["size", 9], ["ingredients", "Corn Oil"], ["created_at", "2020-10-30 16:38:12.699476"], ["updated_at", "2020-10-30 16:38:12.699476"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sprouts"], ["price", 10.94584106763838], ["size", 13], ["ingredients", "Mustard Seed"], ["created_at", "2020-10-30 16:38:12.703557"], ["updated_at", "2020-10-30 16:38:12.703557"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Apples"], ["price", 6.097769562233973], ["size", 15], ["ingredients", "White Bread"], ["created_at", "2020-10-30 16:38:12.708117"], ["updated_at", "2020-10-30 16:38:12.708117"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Goji Berry"], ["price", 8.019965404371579], ["size", 12], ["ingredients", "Swordfish"], ["created_at", "2020-10-30 16:38:12.711873"], ["updated_at", "2020-10-30 16:38:12.711873"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Oranges"], ["price", 4.329053515985401], ["size", 10], ["ingredients", "Apples"], ["created_at", "2020-10-30 16:38:12.715560"], ["updated_at", "2020-10-30 16:38:12.715560"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Honeydew melon"], ["price", 9.164935200243269], ["size", 7], ["ingredients", "Purple Carrot"], ["created_at", "2020-10-30 16:38:12.719210"], ["updated_at", "2020-10-30 16:38:12.719210"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.5ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nectarines"], ["price", 7.579995931150377], ["size", 12], ["ingredients", "Kombu"], ["created_at", "2020-10-30 16:38:12.734044"], ["updated_at", "2020-10-30 16:38:12.734044"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.4ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cherries"], ["price", 9.212192973007394], ["size", 10], ["ingredients", "Beans"], ["created_at", "2020-10-30 16:38:12.738899"], ["updated_at", "2020-10-30 16:38:12.738899"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cranberry"], ["price", 8.086030667523334], ["size", 16], ["ingredients", "Kohlrabi"], ["created_at", "2020-10-30 16:38:12.746210"], ["updated_at", "2020-10-30 16:38:12.746210"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Longan"], ["price", 5.528033409314343], ["size", 6], ["ingredients", "Artichoke"], ["created_at", "2020-10-30 16:38:12.750630"], ["updated_at", "2020-10-30 16:38:12.750630"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nashi Pear"], ["price", 9.918109179860448], ["size", 12], ["ingredients", "Avocado Oil"], ["created_at", "2020-10-30 16:38:12.754508"], ["updated_at", "2020-10-30 16:38:12.754508"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Rockmelon"], ["price", 6.530817510220279], ["size", 5], ["ingredients", "Peaches"], ["created_at", "2020-10-30 16:38:12.757928"], ["updated_at", "2020-10-30 16:38:12.757928"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Grapefruit"], ["price", 7.5107265681375335], ["size", 6], ["ingredients", "Cannellini Beans"], ["created_at", "2020-10-30 16:38:12.761541"], ["updated_at", "2020-10-30 16:38:12.761541"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Oranges"], ["price", 4.964492376632925], ["size", 13], ["ingredients", "Dill"], ["created_at", "2020-10-30 16:38:12.764980"], ["updated_at", "2020-10-30 16:38:12.764980"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Juniper Berries"], ["price", 9.38813788004684], ["size", 3], ["ingredients", "Snowpea sprouts"], ["created_at", "2020-10-30 16:38:12.768782"], ["updated_at", "2020-10-30 16:38:12.768782"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Papaw"], ["price", 4.428785140616348], ["size", 15], ["ingredients", "Kokam"], ["created_at", "2020-10-30 16:38:12.772831"], ["updated_at", "2020-10-30 16:38:12.772831"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Apples"], ["price", 3.761091067916114], ["size", 8], ["ingredients", "Cherries"], ["created_at", "2020-10-30 16:38:12.776435"], ["updated_at", "2020-10-30 16:38:12.776435"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mandarins"], ["price", 3.823846892715242], ["size", 7], ["ingredients", "Butter"], ["created_at", "2020-10-30 16:38:12.780252"], ["updated_at", "2020-10-30 16:38:12.780252"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cavalo"], ["price", 10.952116791500284], ["size", 13], ["ingredients", "Avocado Oil"], ["created_at", "2020-10-30 16:38:12.783535"], ["updated_at", "2020-10-30 16:38:12.783535"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Custard Apples"], ["price", 8.009507575191847], ["size", 5], ["ingredients", "Apricots"], ["created_at", "2020-10-30 16:38:12.787397"], ["updated_at", "2020-10-30 16:38:12.787397"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mangosteens"], ["price", 10.163227446316661], ["size", 14], ["ingredients", "Sardines"], ["created_at", "2020-10-30 16:38:12.790789"], ["updated_at", "2020-10-30 16:38:12.790789"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Butternut pumpkin"], ["price", 5.884308383029731], ["size", 11], ["ingredients", "Cherries"], ["created_at", "2020-10-30 16:38:12.794275"], ["updated_at", "2020-10-30 16:38:12.794275"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Sprouts"], ["price", 3.0587293252278522], ["size", 14], ["ingredients", "Rice Syrup"], ["created_at", "2020-10-30 16:38:12.797805"], ["updated_at", "2020-10-30 16:38:12.797805"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.4ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Snowpeas"], ["price", 10.021589275078593], ["size", 8], ["ingredients", "Corn Tortilla"], ["created_at", "2020-10-30 16:38:12.801574"], ["updated_at", "2020-10-30 16:38:12.801574"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Custard Apples"], ["price", 9.216298687990069], ["size", 5], ["ingredients", "Hazelnut"], ["created_at", "2020-10-30 16:38:12.805370"], ["updated_at", "2020-10-30 16:38:12.805370"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Apricots"], ["price", 4.355913361286592], ["size", 9], ["ingredients", "Fromage Blanc"], ["created_at", "2020-10-30 16:38:12.808854"], ["updated_at", "2020-10-30 16:38:12.808854"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kiwi Fruit"], ["price", 8.178815690442306], ["size", 16], ["ingredients", "Persimmon"], ["created_at", "2020-10-30 16:38:12.812403"], ["updated_at", "2020-10-30 16:38:12.812403"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Aubergine"], ["price", 7.479117373167108], ["size", 4], ["ingredients", "Cassia bark"], ["created_at", "2020-10-30 16:38:12.815956"], ["updated_at", "2020-10-30 16:38:12.815956"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Watermelon"], ["price", 6.628701924148551], ["size", 11], ["ingredients", "Spearmint"], ["created_at", "2020-10-30 16:38:12.819152"], ["updated_at", "2020-10-30 16:38:12.819152"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Currants"], ["price", 3.7345762892825043], ["size", 3], ["ingredients", "Maple Syrup"], ["created_at", "2020-10-30 16:38:12.822488"], ["updated_at", "2020-10-30 16:38:12.822488"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Incaberries"], ["price", 7.767514728468069], ["size", 8], ["ingredients", "Fennel Seeds"], ["created_at", "2020-10-30 16:38:12.825601"], ["updated_at", "2020-10-30 16:38:12.825601"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Juniper Berries"], ["price", 7.560398729951292], ["size", 8], ["ingredients", "Lettuce"], ["created_at", "2020-10-30 16:38:12.829171"], ["updated_at", "2020-10-30 16:38:12.829171"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Blueberries"], ["price", 4.677120454164285], ["size", 5], ["ingredients", "Passionfruit"], ["created_at", "2020-10-30 16:38:12.832548"], ["updated_at", "2020-10-30 16:38:12.832548"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Oranges"], ["price", 5.51540303058173], ["size", 10], ["ingredients", "Camembert"], ["created_at", "2020-10-30 16:38:12.836773"], ["updated_at", "2020-10-30 16:38:12.836773"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Custard Apples"], ["price", 9.030133852882564], ["size", 11], ["ingredients", "Butter"], ["created_at", "2020-10-30 16:38:12.840139"], ["updated_at", "2020-10-30 16:38:12.840139"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lemon"], ["price", 5.46336674511624], ["size", 7], ["ingredients", "Paprik"], ["created_at", "2020-10-30 16:38:12.843462"], ["updated_at", "2020-10-30 16:38:12.843462"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lemon"], ["price", 9.482775590806114], ["size", 16], ["ingredients", "Clams"], ["created_at", "2020-10-30 16:38:12.846801"], ["updated_at", "2020-10-30 16:38:12.846801"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lychees"], ["price", 5.039262089870143], ["size", 15], ["ingredients", "Radicchio"], ["created_at", "2020-10-30 16:38:12.849902"], ["updated_at", "2020-10-30 16:38:12.849902"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Rockmelon"], ["price", 10.269223775824761], ["size", 11], ["ingredients", "Mandarins"], ["created_at", "2020-10-30 16:38:12.853347"], ["updated_at", "2020-10-30 16:38:12.853347"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lychees"], ["price", 4.76300035365914], ["size", 3], ["ingredients", "Lychees"], ["created_at", "2020-10-30 16:38:12.856700"], ["updated_at", "2020-10-30 16:38:12.856700"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Apricots"], ["price", 4.464005920104036], ["size", 4], ["ingredients", "Dried Chinese Broccoli"], ["created_at", "2020-10-30 16:38:12.861242"], ["updated_at", "2020-10-30 16:38:12.861242"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.2ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Cumquat"], ["price", 8.818798713033331], ["size", 7], ["ingredients", "Bamboo Shoots"], ["created_at", "2020-10-30 16:38:12.865016"], ["updated_at", "2020-10-30 16:38:12.865016"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIceCream Create (0.3ms)[0m  [1m[32mINSERT INTO "ice_creams" ("name", "price", "size", "ingredients", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Apples"], ["price", 4.839975113897269], ["size", 13], ["ingredients", "Elderberry"], ["created_at", "2020-10-30 16:38:12.868723"], ["updated_at", "2020-10-30 16:38:12.868723"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mIceCream Load (0.2ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/icecreams" for ::1 at 2020-10-30 12:40:30 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant IcecreamController
+Did you mean?  IceCreamController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams/index" for ::1 at 2020-10-30 12:40:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/icecreams/index"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams" for ::1 at 2020-10-30 12:41:23 -0400
+  
+ActionController::RoutingError (uninitialized constant IcecreamController
+Did you mean?  IceCreamController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams" for ::1 at 2020-10-30 12:44:44 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant IcecreamController
+Did you mean?  IceCreamController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams" for ::1 at 2020-10-30 12:44:45 -0400
+  
+ActionController::RoutingError (uninitialized constant IcecreamController
+Did you mean?  IceCreamController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams" for ::1 at 2020-10-30 12:47:36 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant IcecreamsController
+Did you mean?  IceCreamController):
+  
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.4) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams" for ::1 at 2020-10-30 12:48:40 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by IceCreamController#index as HTML
+  Rendering ice_cream/index.html.erb within layouts/application
+  [1m[36mIceCream Load (0.3ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams"[0m
+  ↳ app/views/ice_cream/index.html.erb:2
+  Rendered ice_cream/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 6600)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/njerimurugi-kamau/Flatiron/code/PHASE 2/conies_app/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 1509ms
+Built at: 10/30/2020 12:48:43 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3178ms (Views: 3175.0ms | ActiveRecord: 1.0ms | Allocations: 26714)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-10-30 13:00:17 -0400
+  
+SyntaxError (/Users/njerimurugi-kamau/Flatiron/code/PHASE 2/conies_app/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+...reams', to: 'ice_cream#show' as: 'show'
+...                             ^~):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting end
+Started GET "/info/routes" for ::1 at 2020-10-30 13:00:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/info/routes"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams/show" for ::1 at 2020-10-30 13:04:38 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IceCreamController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mIceCream Load (0.1ms)[0m  [1m[34mSELECT "ice_creams".* FROM "ice_creams" WHERE "ice_creams"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/ice_cream_controller.rb:7:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 0.7ms | Allocations: 2654)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find IceCream with 'id'=show):
+  
+app/controllers/ice_cream_controller.rb:7:in `show'
+Started GET "/icecreams" for ::1 at 2020-10-30 13:05:17 -0400
+Processing by IceCreamController#index as HTML
+  Rendering ice_cream/index.html.erb within layouts/application
+  Rendered ice_cream/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1038)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2313)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check  <h1> Ice Cream Flavors</h1>
+  <% @ice_cream.each do |icecream| %>
+   <div><%= link_to(icecream.name,'icecreams/show' %></div>
+    
+<% end %>
+):
+1:     <h1> Ice Cream Flavors</h1>
+2:      <% @ice_cream.each do |icecream| %>
+3:       <div><%= link_to(icecream.name,'icecreams/show' %></div>
+4:        
+5:    <% end %>
+  
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+Started GET "/fdfaa" for ::1 at 2020-10-30 13:08:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/fdfaa"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/icecreams" for ::1 at 2020-10-30 13:11:00 -0400
+Processing by IceCreamController#index as HTML
+  Rendering ice_cream/index.html.erb within layouts/application
+  Rendered ice_cream/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1038)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2239)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check  <h1> Ice Cream Flavors</h1>
+  <% @ice_cream.each do |icecream| %>
+   <div><%= link_to(icecream.name, show_path(icecream.id) %></div>
+    
+<% end %>
+):
+1:     <h1> Ice Cream Flavors</h1>
+2:      <% @ice_cream.each do |icecream| %>
+3:       <div><%= link_to(icecream.name, show_path(icecream.id) %></div>
+4:        
+5:    <% end %>
+  
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:5: syntax error, unexpected end, expecting ')'
+app/views/ice_cream/index.html.erb:7: syntax error, unexpected end, expecting ')'

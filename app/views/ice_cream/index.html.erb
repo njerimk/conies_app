@@ -1,0 +1,5 @@
+ <h1> Ice Cream Flavors</h1>
+  <% @ice_cream.each do |icecream| %>
+   <div><%= link_to(icecream.name, show_path(icecream.id) %></div>
+
+<% end %>
